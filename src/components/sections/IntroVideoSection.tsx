@@ -80,10 +80,7 @@ export function IntroVideoSection() {
           
           {/* Eyebrow Badge & Premium Clean Heading */}
           <div className="flex flex-col items-center justify-center text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eaf0ff] border border-[#cbd9ff] text-[10px] font-mono font-bold tracking-[0.2em] text-[#2457d6] uppercase mb-4 shadow-xs">
-              <Sparkles size={13} />
-              <span>PERSONAL STATEMENT // VIDEO INTRO</span>
-            </div>
+
 
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#0a0a0a] tracking-tight leading-[1.1] max-w-3xl">
               Unlocking Potential &amp;{" "}

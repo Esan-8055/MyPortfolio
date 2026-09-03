@@ -86,11 +86,7 @@ export function AnimatedProjectsDeck({
         <div className="lg:col-span-6 flex flex-col justify-between space-y-6 z-20">
           
           <div className="space-y-4">
-            {/* Category Tag */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eaf0ff] border border-[#cbd9ff] text-[10px] font-mono font-bold tracking-[0.2em] text-[#2457d6] uppercase">
-              <Sparkles size={12} />
-              <span>GALLERY · HARDWARE &amp; IOT BUILD</span>
-            </div>
+
 
             {/* Title — Smooth Blur & Upward Motion */}
             <AnimatePresence mode="wait">

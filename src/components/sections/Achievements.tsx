@@ -350,18 +350,7 @@ export function Achievements() {
                   </SectionReveal>
                 )}
 
-                {/* 2. Solid Color Spacer Block */}
-                <div className="rounded-2xl bg-[#eaf0ff] border border-[#2457d6]/20 p-5 flex flex-col justify-between text-[#2457d6] min-h-[140px]">
-                  <Sparkles size={20} />
-                  <div>
-                    <span className="text-[10px] font-mono font-extrabold uppercase block tracking-wider">
-                      CERTIFIED &amp; VERIFIED
-                    </span>
-                    <span className="text-sm font-mono font-bold block text-[#0a0a0a]">
-                      COMPETITIONS &amp; CERTIFICATIONS
-                    </span>
-                  </div>
-                </div>
+
 
               </div>
 
@@ -431,10 +420,6 @@ export function Achievements() {
            ========================================================================= */}
         <SectionReveal delay={0.2} className="mt-20 pt-12 border-t border-[#e8e8e5]">
           <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs font-mono font-bold tracking-[0.25em] text-[#2457d6] uppercase mb-1">
-              <span className="w-2 h-2 rounded-full bg-[#2457d6]" />
-              <span>OFFICIAL CERTIFICATIONS</span>
-            </div>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0a0a0a] tracking-tight">
               Verified Professional <span className="font-serif-accent font-normal italic text-[#2457d6]">Certificates.</span>
             </h3>
@@ -485,17 +470,7 @@ export function Achievements() {
           </div>
         </SectionReveal>
 
-        {/* Bottom Pagination & Footer Strip */}
-        <div className="mt-16 pt-6 border-t border-[#e8e8e5] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#6b6b6b]">
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-[#198754]" />
-            <span>AUTHENTICATED ENGINEERING CREDENTIALS</span>
-          </div>
 
-          <span className="text-[#0a0a0a] font-bold uppercase tracking-wider">
-            JEGATHEESAN • 05 CERTIFICATIONS &amp; HONORS
-          </span>
-        </div>
 
       </div>
     </section>

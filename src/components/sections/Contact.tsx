@@ -16,10 +16,7 @@ export function Contact({ onOpenContact }: ContactProps) {
       <ContainerScroll
         titleComponent={
           <div className="flex flex-col items-center justify-center">
-            <div className="inline-flex items-center gap-2 text-[11px] font-mono uppercase tracking-[0.25em] text-[#2457d6] mb-3 bg-[#eaf0ff] px-4 py-1.5 rounded-full border border-[#2457d6]/20 shadow-xs">
-              <span className="w-2 h-2 rounded-full bg-[#2457d6] animate-pulse" />
-              <span>07 // START A CONVERSATION</span>
-            </div>
+
             <h2 className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-[#0a0a0a] tracking-tight leading-[1.02] max-w-5xl mx-auto">
               Have an idea?{" "}
               <span className="font-serif-accent font-normal italic text-[#2457d6] block sm:inline">
