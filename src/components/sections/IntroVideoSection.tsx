@@ -2,9 +2,8 @@
 
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Play, Pause, Volume2, VolumeX, Sparkles, RefreshCw } from "lucide-react";
+import { Play, Pause, Volume2, VolumeX, Sparkles } from "lucide-react";
 import { SectionReveal } from "@/components/ui/SectionReveal";
-import ParticleText from "@/components/ui/ParticleText";
 
 export function IntroVideoSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -22,7 +21,6 @@ export function IntroVideoSection() {
         playPromise
           .then(() => setIsPlaying(true))
           .catch((err) => {
-            // Ignore browser play promise interruption errors
             if (err.name !== "AbortError") {
               console.error("Video playback error:", err);
             }
@@ -46,12 +44,12 @@ export function IntroVideoSection() {
   return (
     <section
       id="intro-video"
-      className="relative py-20 md:py-32 bg-white text-[#0a0a0a] overflow-hidden select-none"
+      className="relative py-16 md:py-28 bg-white text-[#0a0a0a] overflow-hidden select-none"
     >
-      {/* ── Background Giant Outlined Typography (Matching Screenshot) ────── */}
+      {/* ── Background Giant Outlined Typography ──────────────────────────── */}
       <div className="absolute top-6 left-1/2 -translate-x-1/2 w-full text-center pointer-events-none z-0 overflow-hidden px-2">
         <span
-          className="text-5xl sm:text-8xl md:text-9xl lg:text-[140px] font-black uppercase tracking-tight opacity-20 block leading-none font-sans"
+          className="text-5xl sm:text-8xl md:text-9xl lg:text-[140px] font-black uppercase tracking-tight opacity-15 block leading-none font-sans"
           style={{
             WebkitTextStroke: "1.5px #2457d6",
             color: "transparent",
@@ -63,7 +61,7 @@ export function IntroVideoSection() {
 
       <div className="absolute right-4 top-1/2 -translate-y-1/2 hidden lg:block pointer-events-none z-0">
         <span
-          className="text-7xl xl:text-9xl font-black uppercase tracking-tight opacity-20 block leading-none font-sans rotate-90 origin-right"
+          className="text-7xl xl:text-9xl font-black uppercase tracking-tight opacity-15 block leading-none font-sans rotate-90 origin-right"
           style={{
             WebkitTextStroke: "2px #2457d6",
             color: "transparent",
@@ -73,54 +71,39 @@ export function IntroVideoSection() {
         </span>
       </div>
 
-      {/* ── Background Pill Shapes (Teal/Blue Accent Pill Graphics) ──────── */}
-      <div className="absolute top-16 left-[8%] w-64 sm:w-80 h-32 sm:h-44 bg-[#3b82f6]/15 rounded-full blur-xl transform -rotate-45 pointer-events-none" />
-      <div className="absolute bottom-16 right-[10%] w-72 sm:w-96 h-36 sm:h-48 bg-[#2457d6]/15 rounded-full blur-xl transform rotate-12 pointer-events-none" />
+      {/* ── Background Soft Ambient Glows ───────────────────────────────────── */}
+      <div className="absolute top-16 left-[8%] w-64 sm:w-80 h-32 sm:h-44 bg-[#3b82f6]/10 rounded-full blur-2xl transform -rotate-45 pointer-events-none" />
+      <div className="absolute bottom-16 right-[10%] w-72 sm:w-96 h-36 sm:h-48 bg-[#2457d6]/10 rounded-full blur-2xl transform rotate-12 pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-8 z-10">
         <SectionReveal>
           
-          {/* Eyebrow Badge & Particle Animated Heading */}
-          <div className="flex flex-col items-center justify-center text-center mb-6 sm:mb-8">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eaf0ff] border border-[#cbd9ff] text-[10px] font-mono font-bold tracking-[0.2em] sm:tracking-[0.25em] text-[#2457d6] uppercase mb-3 shadow-xs">
+          {/* Eyebrow Badge & Premium Clean Heading */}
+          <div className="flex flex-col items-center justify-center text-center mb-8">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eaf0ff] border border-[#cbd9ff] text-[10px] font-mono font-bold tracking-[0.2em] text-[#2457d6] uppercase mb-4 shadow-xs">
               <Sparkles size={13} />
               <span>PERSONAL STATEMENT // VIDEO INTRO</span>
             </div>
 
-            {/* ParticleText Interactive Text Animation */}
-            <div className="w-full h-28 sm:h-44 md:h-52 flex items-center justify-center">
-              <ParticleText
-                text="Unlocking Potential & Building Systems"
-                particleSize={2.2}
-                density={3}
-                color="#0a0a0a"
-                highlightColor="#2457d6"
-                scatter={160}
-                gatherDuration={1500}
-                stagger={380}
-                pointerRepel={40}
-                repelRadius={120}
-                idleDrift={0.6}
-                trigger="hover"
-                fontSize="clamp(1.4rem, 4vw, 3.8rem)"
-                fontWeight={800}
-                fontFamily="inherit"
-                glow={true}
-              />
-            </div>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#0a0a0a] tracking-tight leading-[1.1] max-w-3xl">
+              Unlocking Potential &amp;{" "}
+              <span className="bg-gradient-to-r from-[#2457d6] via-[#3b82f6] to-[#0284c7] bg-clip-text text-transparent">
+                Building Systems
+              </span>
+            </h2>
           </div>
 
-          {/* ── Central Showcase Video Card Container ──────────────────────── */}
+          {/* ── Central Hardware Accelerated Video Player ──────────────────── */}
           <div className="relative w-full max-w-4xl mx-auto">
             <div
               onClick={togglePlay}
-              className="relative w-full aspect-video sm:h-[460px] md:h-[500px] rounded-2xl sm:rounded-[36px] overflow-hidden bg-black shadow-[0_25px_70px_rgba(36,87,214,0.22)] border-2 sm:border-4 border-white cursor-pointer group transform-gpu"
+              className="relative w-full aspect-video sm:h-[460px] md:h-[500px] rounded-2xl sm:rounded-[32px] overflow-hidden bg-black shadow-[0_25px_60px_rgba(36,87,214,0.18)] border-2 sm:border-4 border-white cursor-pointer group transform-gpu"
             >
-              {/* HTML5 Video Element (Hardware Accelerated) */}
+              {/* High-Performance HTML5 Video Element */}
               <video
                 ref={videoRef}
                 src="/0821.mp4"
-                preload="auto"
+                preload="metadata"
                 playsInline
                 disablePictureInPicture
                 onEnded={handleVideoEnd}
@@ -129,7 +112,7 @@ export function IntroVideoSection() {
 
               {/* Gradient Dark Overlay */}
               <div
-                className={`absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/20 transition-opacity duration-300 pointer-events-none ${
+                className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/20 transition-opacity duration-300 pointer-events-none ${
                   isPlaying ? "opacity-0 group-hover:opacity-100" : "opacity-100"
                 }`}
               />
@@ -151,7 +134,7 @@ export function IntroVideoSection() {
               {/* Central Glowing Play / Pause Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
                 <div
-                  className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#2457d6] text-white flex items-center justify-center shadow-[0_0_40px_rgba(36,87,214,0.6)] border-2 border-white/80 transition-all duration-300 pointer-events-auto cursor-pointer ${
+                  className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#2457d6] text-white flex items-center justify-center shadow-[0_0_35px_rgba(36,87,214,0.5)] border-2 border-white/80 transition-all duration-300 pointer-events-auto cursor-pointer ${
                     isPlaying
                       ? "opacity-0 group-hover:opacity-100"
                       : "opacity-100 animate-pulse hover:scale-105"
