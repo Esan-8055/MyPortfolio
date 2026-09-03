@@ -85,9 +85,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${jakarta.variable} ${montserrat.variable} ${syne.variable} ${cormorant.variable} ${geistMono.variable} scroll-smooth antialiased`}
     >
-      <body className="bg-[#ffffff] text-[#0a0a0a] min-h-screen flex flex-col selection:bg-[#eaf0ff] selection:text-[#2457d6]">
+      <body suppressHydrationWarning className="bg-[#ffffff] text-[#0a0a0a] min-h-screen flex flex-col selection:bg-[#eaf0ff] selection:text-[#2457d6]">
         {children}
       </body>
     </html>

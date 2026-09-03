@@ -107,7 +107,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({
       }}
       style={{
         width: resolvedWidth,
-        minHeight: typeof height === "number" ? height : height,
+        minHeight: height != null ? (typeof height === "number" ? `${height}px` : height) : undefined,
         border: `${borderWidth}px solid transparent`,
         borderRadius: "1.25em",
         backgroundOrigin: "border-box",
