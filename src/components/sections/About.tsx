@@ -134,19 +134,17 @@ export function About({ onOpenContact }: AboutProps) {
                 <p className="font-serif-accent italic text-xl sm:text-2xl text-[#4a4a4a] mb-2 font-normal">
                   Hey. I&apos;m Jegatheesan,
                 </p>
-
-                {/* Mixed Bold Condensed Sans + Script/Italic Headline */}
                 <h2 className="font-heavy text-3xl sm:text-6xl lg:text-7xl font-black text-[#0a0a0a] tracking-tight uppercase leading-[0.96] mb-6">
-                  <span className="block">A FULL-STACK</span>
+                  <span className="block">SOFTWARE</span>
                   <span className="font-serif-accent font-normal italic lowercase tracking-normal text-[#2457d6] block my-1">
-                    &amp; AI Developer
+                    &amp; full-stack engineer
                   </span>
-                  <span className="block">FOUNDER</span>
+                  <span className="block">DEVELOPER</span>
                 </h2>
 
                 {/* Paragraph Description */}
                 <p className="text-sm sm:text-base text-[#383838] leading-relaxed font-medium max-w-md mb-8">
-                  Transforming ideas into high-performance digital products — Full-Stack web platforms, AI algorithms, and IoT hardware systems that solve real-world problems.
+                  Engineered 15+ production systems across Full-Stack web platforms, AI/ML pipelines, and automated IoT hardware — delivering high-scale digital solutions that solve real-world problems.
                 </p>
 
                 {/* Direct Action Pill Buttons */}
@@ -238,10 +236,10 @@ export function About({ onOpenContact }: AboutProps) {
                   {/* Stat 1 */}
                   <div className="border-b border-[#c8c6be] pb-4">
                     <div className="font-heavy text-3xl sm:text-5xl font-black text-[#0a0a0a] tracking-tight">
-                      03<span className="text-[#2457d6]">+</span>
+                      01<span className="text-[#2457d6]">+</span>
                     </div>
                     <p className="text-[11px] sm:text-xs font-mono font-bold text-[#555555] uppercase tracking-wider mt-1">
-                      Years Coding &amp; Engineering
+                      Years Practical Experience
                     </p>
                   </div>
 
