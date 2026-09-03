@@ -37,10 +37,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-16 px-4 md:px-8 lg:px-10">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eaf0ff] border border-[#cbd9ff] text-[10px] font-mono font-bold tracking-[0.2em] text-[#2457d6] uppercase mb-4 shadow-xs">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#2457d6] animate-pulse" />
-          <span>04 // CAREER JOURNEY &amp; MILESTONES</span>
-        </div>
+
         <h2 className="text-3xl md:text-5xl mb-4 text-[#0a0a0a] font-extrabold tracking-tight max-w-4xl">
           Changelog of my{" "}
           <span className="font-serif-accent font-normal text-[#2457d6] italic">

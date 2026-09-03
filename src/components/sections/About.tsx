@@ -104,18 +104,7 @@ export function About({ onOpenContact }: AboutProps) {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
           
-          {/* Top Eyebrow Section Tag */}
-          <SectionReveal>
-            <div className="flex items-center justify-between border-b border-[#c8c6be] pb-4 mb-8 sm:mb-14">
-              <div className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-[0.25em] text-[#2457d6]">
-                <span className="w-2 h-2 rounded-full bg-[#2457d6] animate-pulse" />
-                <span>01 // ABOUT ME &amp; IDENTITY</span>
-              </div>
-              <span className="text-[11px] font-mono text-[#6b6b6b] uppercase tracking-wider hidden sm:block">
-                JEGATHEESAN • FULL-STACK &amp; AI
-              </span>
-            </div>
-          </SectionReveal>
+
 
           {/* ========================================================
               TOP HERO GRID: 3-COLUMN SPLIT (MATCHING REFERENCE IMAGE)

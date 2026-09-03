@@ -23,11 +23,7 @@ export function Philosophy() {
             <div className="absolute top-0 right-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/70 to-transparent pointer-events-none" />
             <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-gradient-to-tl from-[#3b82f6]/25 to-transparent rounded-full blur-xl pointer-events-none" />
 
-            {/* Top Eyebrow Tag */}
-            <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-white/[0.10] backdrop-blur-md border border-white/35 text-[9px] sm:text-[10px] font-mono font-bold tracking-[0.2em] sm:tracking-[0.25em] text-[#93c5fd] uppercase mb-4 sm:mb-6 shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-[#3b82f6] animate-ping" />
-              <span>DEVELOPMENT MANIFESTO &amp; VISION</span>
-            </div>
+
 
             {/* Giant Manifesto Headline */}
             <h2 className="font-heavy text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.04] max-w-4xl mx-auto mb-4 sm:mb-6 uppercase drop-shadow-[0_4px_30px_rgba(0,0,0,1)]">

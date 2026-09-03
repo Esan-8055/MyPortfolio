@@ -157,10 +157,6 @@ export function SelectedWork() {
         <SectionReveal>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 border-b border-[#e8e8e5] pb-6">
             <div>
-              <div className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-[0.25em] text-[#2457d6] mb-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#2457d6] animate-pulse" />
-                <span>02 // SOFTWARE &amp; WEB PLATFORMS</span>
-              </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0a0a0a] tracking-tight">
                 Software I&apos;ve{" "}
                 <span className="font-serif-accent font-normal text-[#2457d6]">
@@ -311,10 +307,6 @@ export function SelectedWork() {
         <SectionReveal delay={0.2} className="mt-28 pt-20 border-t border-[#e8e8e5]">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
             <div>
-              <div className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-[0.25em] text-[#2457d6] mb-2">
-                <span className="w-2 h-2 rounded-full bg-[#2457d6]" />
-                <span>03 // HARDWARE &amp; IOT LAB BUILDS</span>
-              </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0a0a0a] tracking-tight">
                 Robotics, Sensors &amp;{" "}
                 <span className="font-serif-accent font-normal text-[#2457d6]">

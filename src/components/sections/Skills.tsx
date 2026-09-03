@@ -167,10 +167,7 @@ export function Skills() {
 
         {/* ── Section Header ──────────────────────────────────────────────────── */}
         <div className="mb-8 sm:mb-12 text-left">
-          <div className="inline-flex items-center gap-2 text-[11px] font-mono font-bold tracking-[0.2em] text-[#2457d6] uppercase mb-3">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#2457d6] animate-pulse" />
-            <span>04 // TECHNICAL SKILLS &amp; STACK</span>
-          </div>
+
 
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>

@@ -172,12 +172,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({
                 pointerEvents: "auto",
               }}
             >
-              {(number || category) && (
-                <span className="px-2.5 py-1 rounded-full bg-[#0a0a0a]/80 backdrop-blur-md border border-white/20 text-[10px] font-mono font-bold text-white tracking-wider uppercase shadow-xs">
-                  {number && <span className="text-[#60a5fa] mr-1">{number} ·</span>}
-                  {category ? category.split(" • ")[0] : ""}
-                </span>
-              )}
+
 
               <div className="flex items-center gap-1.5 ml-auto">
                 {githubUrl && (
